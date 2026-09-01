@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Management System Landing Page</title>
+  <link rel="shortcut icon" href="images/school-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <style>
+    .hero {
+      height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/university.webp);
+      display: flex;
+      align-items: center;
+    }
+
+    .student-card {
+      padding-top: 6%;
+    }
+
+    .card-row {
+      display: flex;
+    }
+
+    .card {
+      margin-left: 2%;
+    }
+
+    .sub-title {
+      text-align: center;
+      padding-bottom: 3%;
+    }
+
+    .about-us {
+      padding-top: 5%;
+      padding-bottom: 20%;
+    }
+
+    .about-us-img {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+      object-position: end;
+    }
+
+    .container-fluid {
+      padding: 0;
+      position: relative;
+    }
+
+    /* .overlay {
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(220, 53, 69, 0.7);
+    } */
+
+    .text-box {
+      position: absolute;
+      color: white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .logo {
+      height: 500px;
+      width: 500px;
+      padding-top: -100px;
+    }
+
+    .row {
+      padding-top: 6%;
+    }
+
+    .font-size {
+      font-size: 1.5rem;
+    }
+
+    .quotation-container {
+      display: flex;
+      flex-direction: column;
+      padding-top: 5%;
+      background-color: rgb(234, 226, 226);
+
+    }
+
+    .quotation-div img {
+      height: 90px;
+      filter: brightness(0) saturate(100%) invert(9%) sepia(91%) saturate(5453%) hue-rotate(352deg) brightness(81%) contrast(116%);
+    }
+
+    .quotation-div {
+      padding-left: 20%;
+    }
+
+    .quotation-text {
+      padding-left: 29%;
+      padding-top: 2%;
+      font-style: italic;
+      padding-bottom: 2%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Logi<span class="text-danger fw-bold">Cape</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="student_mgmt_sys.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sign-in.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- hero-section -->
+  <div class="hero">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-8">
+          <h1 class="display-4 fw-bold text-center" style="color: rgb(49, 48, 48);">Welcome to Logi<span class="text-danger">Cape</span> Academy</h1>
+          <p class="lead text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, asperiores?
+            Doloremque voluptatibus quasi dicta, quae maiores sequi facere et odit provident explicabo asperiores
+            facilis? Adipisci quo ut assumenda laborum optio.</p>
+          <div class="text-center">
+            <button class="btn btn-lg btn-dark"><a style="text-decoration: none;" class="btn-dark"
+                href="sign-up.html">Register</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- student-card -->
+  <section class="student-card">
+    <h2 class="sub-title">Features</h2>
+    <div class="card-row">
+      <div class="card" style="width: 18rem;">
+        <img src="images/student-card-one.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="images/student-card-two.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="images/student-card-three.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="images/student-card-four.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about-us -->
+  <section class="about-us">
+    <div class="container">
+      <div class="row">
+        <h2 class="sub-title">About Us</h2>
+        <div class="line-height col col-lg-6 font-size">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, maiores delectus ad, ex iure dolores fugiat,
+            quibusdam amet iusto cum eos blanditiis explicabo atque animi porro pariatur. Aliquam, id ipsam. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Aperiam, tempora placeat expedita quibusdam sit qui ipsum
+            architecto ratione. Qui praesentium exercitationem error tempora odio magnam nobis commodi unde alias
+            reprehenderit? Lorem ipsum dolor sit amet consectetu.
+          </p>
+        </div>
+        <div class="col col-lg-6">
+          <img class="rounded logo" src="images/school-logo.png">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid quotation-container">
+      <h3 class="text-center pb-4">Frequently Asked Questions</h3>
+      <div class="quotation-div">
+        <img src="images/quotation.png">
+      </div>
+      <div class="fs-5 quotation-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Officiis officia quas tenetur culpa blanditiis.
+          Modi
+          quas <br>dolorem sapiente ipsum pariatur quae error voluptatem sit<br> alias expedita. Sed ipsam architecto
+          cumque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Officiis officia quas tenetur culpa blanditiis.
+          Modi
+          quas <br>dolorem sapiente ipsum pariatur quae error voluptatem sit<br> alias expedita. Sed ipsam architecto
+          cumque.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Officiis officia quas tenetur culpa blanditiis.
+          Modi
+          quas <br>dolorem sapiente ipsum pariatur quae error voluptatem sit<br> alias expedita. Sed ipsam architecto
+          cumque.</p>
+      </div>
+    </div>
+  </section>
+<!-- footer -->
+  <footer class="bg-dark text-light pt-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-lg-4">
+          <h3>LogiCape</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, blanditiis!</p>
+          <p>0123456789</p>
+          <p class="mb-0">0123456789</p>
+        </div>
+        <div class="col">
+          <h4>Menu</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>More</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+          </ul>
+        </div>
+        <div class="col col-lg-3">
+          <h4>Categories</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Link</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3 text-lg-end">
+          <h4>Social Media</h4>
+          <div><a class="text-decoration-none text-light" href="#"><i class="fa-brands fa-instagram me-3"></i></a></div>
+          <div><a class="text-decoration-none text-light" href="#"><i class="fa-brands fa-facebook me-3"></i></a></div>
+          <div><a class="text-decoration-none text-light" href="#"><i class="fa-brands fa-twitter me-3"></i></a></div>
+          <div><a class="text-decoration-none text-light" href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-between">
+        <p>2026 LogiCape. All Rights Reserved.</p>
+        <div>
+          <a href="#" class="text-decoration-none text-light me-4">Terms of use</a>
+          <a href="#" class="text-decoration-none text-light">Privacy Policy</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

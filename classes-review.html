@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Management System Student Dashboard</title>
+  <link rel="shortcut icon" href="images/school-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <style>
+    body {
+      background-color: rgb(248, 248, 248);
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 100;
+      background-color: #111416;
+    }
+
+    .sidebar {
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+      top: 57px;
+      height: calc(100vh - 56px);
+    }
+
+    .list-group .list-group-item.active {
+      background-color: blue;
+      border-color: blue;
+      color: white;
+    }
+
+    .list-group .list-group-item {
+      border-radius: 10px;
+    }
+
+    .other-content .list-group-item.bg-dark:hover {
+      background-color: #111416 !important;
+      color: #ffffff !important;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logi<span class="text-danger fw-bold">Cape</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Welcome, Rabbi</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn btn-light " href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user-check text-dark fs-5"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+
+      <!-- sidebar -->
+      <div class="col-md-2 col-lg-2 bg-dark sidebar p-0">
+        <h4 class="text-center mt-2 text-light">Student Portal</h4>
+        <div class="w-100 container-fluid border-top border-bottom mt-4 d-flex flex-column align-items-center"
+          style="background-color: rgba(0,0,0,0.4);">
+          <div class="p-2">
+            <img class="container-fluid mt-2" src="images/student-icon.svg"
+              style="width:4em; height: 4rem; background-image: linear-gradient(rgb(239, 12, 50),rgb(201, 10, 10)); border-radius: 50px; padding: 1em ;">
+          </div>
+          <p class="fw-bold text-white mb-0">Rabbi A</p>
+          <p class="text-white" style="font-size: 10px;">STU/2026/01</p>
+        </div>
+        <div class="other-content pe-4">
+          <div class="list-group px-2">
+            <a href="student_dashboard.html" class="list-group-item list-group-item-action m-2 bg-dark text-light" aria-current="true">
+              Dashboard
+            </a>
+            <a href="profile.html" class="list-group-item list-group-item-action m-2 me-4 bg-dark text-light">My Profile</a>
+            <a href="my-classes.html" class="list-group-item list-group-item-action m-2 bg-dark text-light">My Classes</a>
+            <a href="classes-review.html" class="list-group-item list-group-item-action m-2 active text-light">Classes Review</a>
+            <a href="sample-schedule.html" class="list-group-item list-group-item-action m-2 bg-dark text-light">Sample Schedule</a>
+            <a href="wallet.html" class="list-group-item list-group-item-action m-2 bg-dark text-light">Wallet</a>
+            <a href="announcements.html"
+              class="list-group-item list-group-item-action m-2 bg-dark text-light">Announcements</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- welcome text -->
+      <div class="col-md-9 col-lg-9" style="margin-left: 21%; margin-top: 5%;">
+        <div class="title container d-flex justify-content-between mt-4">
+          <div class="">
+            <h1 class="text-dark">Classes Review</h1>
+          </div>
+          <div class="">
+            <button class="btn btn-success mt-2">+ Register Class</button>
+          </div>
+        </div>
+
+
+        <!-- classes-review -->
+        <div class="academic-results container me-4 mt-3" id="results">
+          <div class="text-align-center">
+            <div class="card me-3 border-0 shadow-sm" style="width: 58rem; height: 100%; border-radius: 10px;">
+              <div class="d-flex p-1 border-0">
+                <div class="d-flex align-items-center">
+                  <img class="m-2" src="images/school-logo.png" style="width:38px">
+                  <p class="fw-500 mb-0 fs-4">Classes Review</p>
+                </div>
+              </div>
+              <div class="list-group">
+                <div class="card-body p-0">
+                  <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0 text-center">
+                      <thead class="table-light p-2">
+                        <tr class="fw-bold text-secondary">
+                          <th class="text-start ps-4">Class code</th>
+                          <th class="text-start">Course</th>
+                          <th>Classes Attended</th>
+                          <th class="text-end pe-4">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="text-start ps-4 fw-bold">Ad101</td>
+                          <td class="text-start">Visual Art Design</td>
+                          <td>1</td>
+                          <td class="text-end pe-4 text-success fw-bold">Understood</td>
+                        </tr>
+                        <tr>
+                          <td class="text-start ps-4 fw-bold">Cn101</td>
+                          <td class="text-start">Contract Negotiating</td>
+                          <td>1</td>
+                          <td class="text-end pe-4 text-success fw-bold">Understood</td>
+                        </tr>
+                        <tr>
+                          <td class="text-start ps-4 fw-bold">Hp101</td>
+                          <td class="text-start">Human Perception</td>
+                          <td>0</td>
+                          <td class="text-end pe-4 text-success fw-bold">-</td>
+                        </tr>
+                        <tr>
+                          <td class="text-start ps-4 fw-bold">Ac101</td>
+                          <td class="text-start">Art & Cognition</td>
+                          <td>1</td>
+                          <td class="text-end pe-4 text-success fw-bold">More Practice</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer class="bg-dark text-light pt-4 me-4 mt-5 mb-4 pb-2 px-4 rounded-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="d-flex justify-content-start align-items-center p-0">
+                  <img class="me-2" src="images/school-logo.png" style="width:30px">
+                  <p class="fw-bold m-0">Student Portal</p>
+                </div>
+                <p class="text-muted">LogiCape Academy student portal</p>
+              </div>
+              <div class="col-4">
+                <p class="fw-bold">Quick Links</p>
+                <ul class="list-unstyled">
+                  <li><a href="student_dashboard.html" class="text-decoration-none text-muted">Dashboard</a></li>
+                  <li><a href="courses.html" class="text-decoration-none text-muted">Courses</a></li>
+                  <li><a href="sign-in.html" class="text-decoration-none text-muted">Login</a></li>
+                  <li><a href="student_mgmt_sys.html" class="text-decoration-none text-muted">Home</a></li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <p class="fw-bold">Contact</p>
+                <div class="d-flex justify-content-start align-items-center p-0">
+                  <img class="me-2" src="images/school-logo.png" style="width:30px">
+                  <p class="text-muted m-0">logicape@academy.com</p>
+                </div>
+                <div class="d-flex justify-content-start align-items-center p-0">
+                  <img class="me-2" src="images/school-logo.png" style="width:30px">
+                  <p class="text-muted m-0">+012 456 891 102</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="d-flex flex-column text-center">
+              <p class="text-muted">2026 LogiCape. All Rights Reserved.</p>
+              <small class="text-muted">Site developed by RabbiSites</small>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

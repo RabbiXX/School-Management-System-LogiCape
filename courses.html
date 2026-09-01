@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Management System Sign In Page</title>
+  <link rel="shortcut icon" href="images/school-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+  <style>
+    body {
+      background-color: rgb(245, 243, 243);
+    }
+
+    .navbar {
+      background-color: rgb(245, 243, 243);
+    }
+
+    .register-banner {
+      border-radius: 20px;
+      height: 80vh;
+      background-color: rgb(219, 6, 6);
+      position: relative;
+    }
+
+    .text-color {
+      color: rgb(32, 35, 33);
+    }
+
+    .image-hang-row {
+      transform: translateY(35%);
+    }
+
+    .image-hang-row img {
+      max-height: 165px;
+      object-fit: cover;
+      object-position: top;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    h1 {
+      padding-top: 10%;
+    }
+
+    .card-style {
+      height: 200px;
+      object-fit: cover;
+    }
+    .background{
+      background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.9), rgba(0,0,0, 0.4)), url(images/university-courses-pic.webp);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+    }
+    .background p{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .button{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 10%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="student_mgmt_sys.html">Logi<span class="text-danger fw-bold">Cape</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="student_mgmt_sys.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="student_mgmt_sys.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sign-in.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="background">
+    <p class="text-center" style="font-size: 3rem; color: rgb(219, 218, 218); ">Find The Course Tailored For You</p>
+    <div class="btn button btn-danger btn-lg "><a class="text-decoration-none text-white" href="#course-list" class="">Explore Courses</a></div>
+  </div>
+
+  <div class="container">
+    <h1 class="text-center">Our Courses</h1>
+    <p class="text-center pb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur iste maiores,
+      praesentium consequatur possimus atque?</p>
+
+    <div class="container" id="course-list">
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card h-100 overflow-hidden" style="width: 18rem;">
+            <img src="images/anthropology.jpg" class="card-img-top card-style" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Anthropology</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card h-100 overflow-hidden" style="width: 18rem;">
+            <img src="images/arts.jpg" class="card-img-top card-style" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Arts</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 overflow-hidden" style="width: 18rem;">
+            <img src="images/education.jpg" class="card-img-top card-style" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Education</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="card h-100 overflow-hidden" style="width: 18rem;">
+            <img src="images/gamedev.jpg" class="card-img-top card-style" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Game Development</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card h-100 overflow-hidden" style="width: 18rem;">
+            <img src="images/humanities.webp" class="card-img-top card-style" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Humanities</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 overflow-hidden" style="width: 18rem;">
+            <img src="images/management.jpg" class="card-img-top card-style" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Management</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-4 d-flex justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 overflow-hidden" style="width: 18rem;">
+            <img src="images/science.jpg" class="card-img-top card-style" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Science</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card h-100 overflow-hidden" style="width: 18rem;">
+            <img src="images/technology.jpg" class="card-img-top card-style" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Technology</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
